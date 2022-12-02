@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(209, 220, 229);
+}
+.main-container{
+    width: 1440px;
+    min-height: 100vh;
+    /* border: 2px black solid; */
+    background-color: white;
+}
+.header-container{
+    position: relative;
+
+}
+.header-container svg{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    /* z-index:-1; */
+}
+.navbar{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px black solid;
+    width: 1440px;
+    height: 67px;
+}
+.nav-list{
+    display: flex;
+    flex-direction: row;
+
+}
+.logo-text{
+    position: absolute;
+    top: 18px;
+    left: 259px;
+    font-size: 40px;
+    border: 1px black solid;
+}
+.logo-text .first-half{
+    color: #C7F2FF;
+}
+.logo-text .second-half{
+    color:#FFFFFF;
+}
+.nav-list{
+    position: absolute;
+    top: 36px;
+    left: 671px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid black;
+    width: 654px;
+}
+.nav-btn a{
+    text-decoration: none;
+    color: #EBF4F3;
+    font-size: 20px;
+}
+
+.mini-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+    position: absolute;
+    top: 228px;
+    left: 259px;
+    width: 528px;
+    height: 300px;
+    border: 1px solid black;
+}
+.mini-container h1{
+    font-size: 45px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.mini-container p{
+    width: 458px;
+    height: 70px;
+    font-size: 21px;
+    font-weight: 400;
+}
+.mini-btn{
+    width: 438px;
+    display: flex;
+    flex-direction: row;
+    height: 55px;
+    gap: 25px;
+    font-size: 21px;
+    font-weight: 400px;
+}
+.mini-btn div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+.mini-btn div:nth-child(1){
+    width: 153px;
+}
+.mini-btn div:nth-child(1):hover{
+    background-color: #C7F2FF;
+}
+.mini-btn div:nth-child(2){
+    width: 260px;
+}
+.mini-btn div:nth-child(2):hover{
+    background-color: #C7F2FF;
+}
