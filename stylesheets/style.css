@@ -241,20 +241,235 @@ body{
 .card .title{
     font-weight: 600;
     font-size: 19px;
-    margin-top: 12px;
+    margin-top: 15px;
 }
 .card .para{
     text-align: center;
-    margin-top: 12px;
-    font-size: 16px;
+    margin-top: 22px;
+    font-size: 14px;
+    color: #757373;
 }
 .third-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     align-items: center;
+    justify-content: space-between;
+    position: relative;
+    /* border: 1px black solid; */
 }
 .third-sub-container{
     display: flex;
     flex-direction:column;
     row-gap: 30px;
+    width:361px;
+    position: absolute;
+    top: 180px;
+    left: 260px;
+}
+.third-sub-container h2{
+    font-size: 35px;
+    font-weight: 700;
+}
+.third-sub-container p{
+    font-size: 16px;
+    font-weight: 300;
+    color: #757373;
+}
+.third-sub-container .third-con-btn{
+    width: 141px;
+    height: 46px;
+    background-color: #34C9B6;
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+}
+.third-sub-container .third-con-btn:hover{
+    color: #C7F2FF;
+}
+.video-container{
+    position: absolute;
+    top: 56px;
+    left: 835px;
+    z-index: 1;
+}
+.video-container::before{
+    content: "";
+    width: 362px;
+    height: 410px;
+    background-color: #34C9B6;
+    position: absolute;
+    top: -11px;
+    left: 24px;
+    z-index: -2;
+    border-radius: 23px;
+}
+.video-container video{
+    border-radius: 23px;
+    /* border: 3px black solid; */
+}
+
+
+.video-button{
+    position: absolute;
+    top: 149px;
+    left: 140px;  
+}
+.play{
+    position: absolute;
+    top: 29px;
+    left: 28px;
+    z-index: 2;
+}
+.pause{
+    display: none;
+    width: 20px;
+    height: 30px;
+    border: solid #34C9B6;
+    border-width: 0px 7px 0px 7px;
+    position: absolute;
+    top: 32px;
+    left: 34px;
+    z-index: 2;
+}
+
+.expert-team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 808px;
+    /* border: 2px black solid; */
+    padding: 72px 0px;
+    row-gap: 58px;
+}
+.expert-team header h1{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 500;
+}
+.expert-team header p{
+    width: 889px;
+    height: 90px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 300;
+    color: #757373;
+}
+.doctors{
+    display: grid;
+    grid-template-columns: repeat(4, 228px);
+    /* border: 1px black solid; */
+    column-gap: 30px;
+    height: 371px;
+}
+/* .doctor{
+    border: 1px black solid;
+} */
+.doctor .image{
+    height: 272px;
+    background-color: #E6F7FC;
+    display: flex;
+    align-items: flex-end;
+}
+.name{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+}
+.profession{
+    text-align: center;
+    color: #34C9B6;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 3px;
+}
+.social-links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 7px;
+    margin-top: 14px;
+}
+.social-links a{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    /* border: 1px black solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F1F1F1;
+}
+.social-links a:nth-child(4){
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+}
+.social-links a:hover{
+    background-color: #34C9B6;
+    color: #FFFFFF;
+}
+.social-links a:hover img{
+    filter: invert(100%);
+}
+.appointment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 530px;
+    /* border: 1px black solid; */
+    
+}
+.appointment header{
+    width: 1010px;
+    height: 90px;
+    background-color:  #C7F2FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.appointment header h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+.appointment form{
+    width: 1010px;
+    display: grid;
+    grid-template-columns: repeat(2, 461px);
+    gap: 43px 87px;
+    padding: 50px 0px
+}
+.appointment form input{
+    font-size: 18px;
+    padding: 6px 20px 0px;
+    display: inline-block;
+    width: 461px;
+    height: 51px;
+    outline: none;
+    border: 1px #A09D9D solid;
+}
+.appointment form input::placeholder{
+    font-size: 18px;
+    font-weight: 400;
+    color:#A09D9D;
+}
+.confirm-btn{
+    position: relative;
+    top: 0px;
+    left: 419px;
+    width: 170px;
+}
+.confirm-btn button{
+    width: 169px;
+    height: 53px;
+    background-color: #34C9B6;
+    color: #FFFFFF;
+    font-size: 21px;
+    font-weight: 400;
+    border:none;
 }
