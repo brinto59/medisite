@@ -8,6 +8,7 @@ body{
     justify-content: center;
     min-height: 100vh;
     background-color: rgb(209, 220, 229);
+    /* overflow-x: hidden; */
 }
 .main-container{
     width: 1440px;
@@ -472,4 +473,107 @@ body{
     font-size: 21px;
     font-weight: 400;
     border:none;
+}
+.confirm-btn button:hover{
+    color: #C7F2FF;
+}
+.news-events{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 55px 0px;
+}
+.news-events header{
+    text-align: center;
+}
+.news-events header h1{
+    font-size: 60px;
+    font-weight: 500;
+
+}
+.news-events header p{
+    font-size: 26px;
+    font-weight: 300;
+    color: #757373;
+    width: 889px;
+    line-height: 30.47px;
+
+}
+.news-events-container{
+    width: 1004px;
+    border: 1px red solid;
+    overflow-x: hidden;
+}
+.news-events-cards{
+    display: grid;
+    grid-template-columns: repeat(6, 310px);
+    gap: 0px 38px;
+    border: 1px black solid;
+    transform: translateX(0px);
+}
+.news-events-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 22px;
+    border: 1px black solid;
+    height: 324px;
+}
+.news-events-card header h1{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21px;
+    text-align: justify;
+    width: 268px;
+
+}
+.news-events-card header p{
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 13px;
+    color: #757373;
+    width: 260px;
+    text-align: start;
+    margin-top: 18px;
+}
+.image-news-events figcaption{
+    font-size: 10px;
+    font-weight: 300;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 24px;
+}
+.image-news-events figcaption span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 7.5px;
+    padding: 1px;
+}
+.image-news-events figcaption span i{
+    color: #34C9B6;
+}
+.dots{
+    width: 46px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 8px;
+    margin-bottom: 10px;
+}
+.dots .dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.dots .dot:nth-child(1){
+    background-color:  #C7F2FF;
+}
+.dots .dot:nth-child(2){
+    background-color:  #34C9B6;
+}
+.dots .dot:nth-child(3){
+    background-color:  #C7F2FF;
 }
