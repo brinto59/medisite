@@ -9,6 +9,8 @@ const news_events_card = document.querySelectorAll(".news-events-card");
 const left_move = document.querySelector(".left-move-sign i");
 const right_move = document.querySelector(".right-move-sign i");
 
+const contacts = document.querySelectorAll(".contact div i");
+const tooltip = document.querySelector(".tooltip");
 video_button.addEventListener("click",(e)=>{
     if(video.paused){
         video.play();
@@ -63,6 +65,24 @@ right_move.addEventListener("click", (e)=>{
     let translateX = getComputedStyle(news_events_cards).transform;
     let value = new DOMMatrix(translateX).m41;
     news_events_cards.style.transform=`translateX(${value+350}px)`;
+});
+
+contacts.forEach(element => {
+    element.addEventListener("click", (e)=>{
+        tooltip.innerHTML = "Copied!"
+        navigator.clipboard.writeText(e.target.nextSibling.innerHTML);
+    });
+});
+contacts.forEach(element => {
+    element.addEventListener("mouseover", (e)=>{
+        tooltip.style.visibility="visible";
+    });
+});
+contacts.forEach(element => {
+    element.addEventListener("mouseout", (e)=>{
+        tooltip.style.visibility="hidden";
+        tooltip.innerHTML="Copy to clipboard!";
+    });
 });
 
 function createDeleteElement(){
