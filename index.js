@@ -71,6 +71,6 @@ function createDeleteElement(){
         let element = document.querySelector("[data-id=\"2\"]").cloneNode(true);
         console.log(element);
         news_events_cards.appendChild(element);
-        // news_events_cards.removeChild(news_events_cards.firstElementChild);
+        news_events_cards.removeChild(news_events_cards.firstElementChild);
     }
 }
